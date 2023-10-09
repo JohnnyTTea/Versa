@@ -1,0 +1,13 @@
+pipenv install
+
+Set-Location "Y:\IT Related\Versa\dist"
+cd Desktop/Versa
+pipenv shell
+jupyter nbconvert --to script app.ipynb
+pyinstaller -D app.py -i icon.ico -w
+exit
+
+
+cd Desktop/Versa
+jupyter nbconvert --to script app.ipynb
+pyinstaller --noconsole --onefile --icon=icon.ico app.py
