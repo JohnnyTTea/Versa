@@ -3,8 +3,8 @@ pipenv install
 Set-Location "Y:\IT Related\Versa\dist"
 cd Desktop/Versa
 pipenv shell
-jupyter nbconvert --to script app.ipynb
-pyinstaller -D app.py -i icon.ico -w
+jupyter nbconvert --to script Versa.ipynb
+pyinstaller -D Versa.py -i icon.ico -w
 exit
 
 
